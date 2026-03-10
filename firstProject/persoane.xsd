@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Elementul radacina -->
+    <xs:element name="persoane">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persoana" type="tipPersoana" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Tipul pentru o persoana -->
+    <xs:complexType name="tipPersoana">
+        <xs:sequence>
+            <xs:element name="nume"          type="xs:string"/>
+            <xs:element name="prenume"       type="xs:string"/>
+            <xs:element name="varsta"        type="xs:positiveInteger"/>
+            <xs:element name="facultate"     type="xs:string"/>
+            <xs:element name="specializare"  type="xs:string"/>
+            <xs:element name="medie"         type="tipMedie"/>
+            <xs:element name="adresa"        type="tipAdresa"/>
+            <xs:element name="limbi_straine" type="tipLimbiStraine"/>
+            <xs:element name="email"         type="xs:string"/>
+            <xs:element name="telefon"       type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <!-- Media: numar intre 1 si 10 -->
+    <xs:simpleType name="tipMedie">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Tipul pentru adresa -->
+    <xs:complexType name="tipAdresa">
+        <xs:sequence>
+            <xs:element name="strada"     type="xs:string"/>
+            <xs:element name="numar"      type="xs:string"/>
+            <xs:element name="localitate" type="xs:string"/>
+            <xs:element name="judet"      type="xs:string"/>
+            <xs:element name="tara"       type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Tipul pentru limbi straine -->
+    <xs:complexType name="tipLimbiStraine">
+        <xs:sequence>
+            <xs:element name="limba" type="tipLimba" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- O limba straina cu atribut nivel -->
+    <xs:complexType name="tipLimba">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="nivel" type="tipNivel" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Nivelul limbii: incepator / mediu / avansat -->
+    <xs:simpleType name="tipNivel">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="incepator"/>
+            <xs:enumeration value="mediu"/>
+            <xs:enumeration value="avansat"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

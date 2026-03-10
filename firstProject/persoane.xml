@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persoane>
+    <persoana id="1">
+        <nume>Afrasinei</nume>
+        <prenume>Mario</prenume>
+        <varsta>22</varsta>
+        <facultate>Automatica si Calculatoare</facultate>
+        <specializare>IS</specializare>
+        <medie>9</medie>
+        <adresa>
+            <strada>Tudor Vladimirescu</strada>
+            <numar>3</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <limbi_straine>
+            <limba nivel="avansat">Engleza</limba>
+            <limba nivel="avansat">Franceza</limba>
+        </limbi_straine>
+        <email>mario@gmail.com</email>
+        <telefon>0735274839</telefon>
+    </persoana>
+
+    <persoana id="2">
+        <nume>Mocanu</nume>
+        <prenume>Claudiu</prenume>
+        <varsta>20</varsta>
+        <facultate>Informatica</facultate>
+        <specializare>Informatica aplicata</specializare>
+        <medie>9.2</medie>
+        <adresa>
+            <strada>Victor Babes</strada>
+            <numar>5</numar>
+            <localitate>Vaslui</localitate>
+            <judet>Vaslui</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <limbi_straine>
+            <limba nivel="avansat">Engleza</limba>
+            <limba nivel="mediu">Germana</limba>
+        </limbi_straine>
+        <email>clapa@gmail.com</email>
+        <telefon>078473273974</telefon>
+    </persoana>
+
+    <persoana id="3">
+        <nume>Ionescu</nume>
+        <prenume>Alexandru</prenume>
+        <varsta>21</varsta>
+        <facultate>Automatica si Calculatoare</facultate>
+        <specializare>Calculatoare</specializare>
+        <medie>8.7</medie>
+        <adresa>
+            <strada>Strada Pacurari</strada>
+            <numar>12</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <limbi_straine>
+            <limba nivel="avansat">Engleza</limba>
+            <limba nivel="incepator">Spaniola</limba>
+        </limbi_straine>
+        <email>alex.ionescu@gmail.com</email>
+        <telefon>0721456789</telefon>
+    </persoana>
+
+
+</persoane>
