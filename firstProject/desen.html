@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MuzicăWeb – Desen</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎵 MuzicăWeb</h1>
+        <p><em>Descoperă lumea muzicii — genuri, artiști, videoclipuri și multe altele!</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="inregistreaza.html">Înregistrează-te</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="desen.html">Desen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>🎨 Desen – Lumea muzicii</h2>
+            <p>
+                Desenul de mai jos este realizat în format <strong>SVG (Scalable Vector Graphics)</strong>
+                și reprezintă o scenă inspirată din lumea muzicii: un portativ cu note muzicale,
+                o chitară, o tobă și elemente decorative geometrice colorate cu gradienți.
+                Desenul conține <em>animații</em>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Desenul SVG</h2>
+
+            <svg
+                width="800"
+                height="550"
+                viewBox="0 0 800 550"
+                xmlns="http://www.w3.org/2000/svg">
+
+                <defs>
+                    <linearGradient id="gradFundal" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#1a0033"/>
+                        <stop offset="100%" stop-color="#0d1b4b"/>
+                    </linearGradient>
+
+                    <linearGradient id="gradChitara" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#c8860a"/>
+                        <stop offset="100%" stop-color="#7a4400"/>
+                    </linearGradient>
+
+                    <linearGradient id="gradToba" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#cc2244"/>
+                        <stop offset="100%" stop-color="#880022"/>
+                    </linearGradient>
+
+                    <linearGradient id="gradNote" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#ffffff"/>
+                        <stop offset="100%" stop-color="#ffe066"/>
+                    </linearGradient>
+
+                    <radialGradient id="gradSteaua" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+                        <stop offset="100%" stop-color="#cc66ff" stop-opacity="0"/>
+                    </radialGradient>
+
+                    <linearGradient id="gradEQ" x1="0%" y1="100%" x2="0%" y2="0%">
+                        <stop offset="0%" stop-color="#00cc66"/>
+                        <stop offset="100%" stop-color="#00ffcc"/>
+                    </linearGradient>
+                </defs>
+
+                <rect x="0" y="0" width="800" height="550" fill="url(#gradFundal)"/>
+
+                <circle cx="100" cy="80" r="60" fill="url(#gradSteaua)" opacity="0.3"/>
+                <circle cx="700" cy="120" r="80" fill="url(#gradSteaua)" opacity="0.2"/>
+                <circle cx="400" cy="30" r="40" fill="url(#gradSteaua)" opacity="0.25"/>
+
+                <g stroke="#aaaadd" stroke-width="1.5" opacity="0.8">
+                    <line x1="40" y1="160" x2="760" y2="160"/>
+                    <line x1="40" y1="180" x2="760" y2="180"/>
+                    <line x1="40" y1="200" x2="760" y2="200"/>
+                    <line x1="40" y1="220" x2="760" y2="220"/>
+                    <line x1="40" y1="240" x2="760" y2="240"/>
+                </g>
+
+                <text x="45" y="232" font-size="90" fill="#cc99ff" font-family="serif" opacity="0.9">𝄞</text>
+
+                <g fill="url(#gradNote)">
+                    <ellipse cx="200" cy="240" rx="13" ry="9" transform="rotate(-15,200,240)"/>
+                    <line x1="213" y1="235" x2="213" y2="175" stroke="#ffe066" stroke-width="2"/>
+
+                    <ellipse cx="270" cy="230" rx="13" ry="9" transform="rotate(-15,270,230)"/>
+                    <line x1="283" y1="225" x2="283" y2="165" stroke="#ffe066" stroke-width="2"/>
+
+                    <ellipse cx="340" cy="220" rx="13" ry="9" transform="rotate(-15,340,220)"/>
+                    <line x1="353" y1="215" x2="353" y2="155" stroke="#ffe066" stroke-width="2"/>
+
+                    <ellipse cx="410" cy="210" rx="13" ry="9" transform="rotate(-15,410,210)"/>
+                    <line x1="423" y1="205" x2="423" y2="145" stroke="#ffe066" stroke-width="2"/>
+
+                    <ellipse cx="480" cy="200" rx="13" ry="9" transform="rotate(-15,480,200)"/>
+                    <line x1="493" y1="195" x2="493" y2="135" stroke="#ffe066" stroke-width="2"/>
+
+                    <ellipse cx="550" cy="190" rx="13" ry="9" transform="rotate(-15,550,190)"/>
+                    <line x1="563" y1="185" x2="563" y2="125" stroke="#ffe066" stroke-width="2"/>
+
+                    <ellipse cx="620" cy="180" rx="13" ry="9" transform="rotate(-15,620,180)"/>
+                    <line x1="633" y1="175" x2="633" y2="115" stroke="#ffe066" stroke-width="2"/>
+                </g>
+
+                <g transform="translate(80, 300)">
+                    <ellipse cx="60" cy="100" rx="55" ry="70"
+                             fill="url(#gradChitara)" stroke="#5a2d00" stroke-width="2"/>
+
+                    <rect x="52" y="-80" width="16" height="120"
+                          fill="#8B4513" stroke="#5a2d00" stroke-width="1.5"/>
+
+                    <rect x="44" y="-100" width="32" height="25"
+                          fill="#6B3410" stroke="#3a1a00" stroke-width="1.5"/>
+
+                    <circle cx="60" cy="90" r="20" fill="#3a1500"/>
+
+                    <line x1="50" y1="-95" x2="50" y2="170" stroke="#dddddd" stroke-width="0.8"/>
+                    <line x1="55" y1="-95" x2="55" y2="170" stroke="#dddddd" stroke-width="0.8"/>
+                    <line x1="60" y1="-95" x2="60" y2="170" stroke="#dddddd" stroke-width="0.8"/>
+                    <line x1="65" y1="-95" x2="65" y2="170" stroke="#dddddd" stroke-width="0.8"/>
+                    <line x1="70" y1="-95" x2="70" y2="170" stroke="#dddddd" stroke-width="0.8"/>
+                    <line x1="75" y1="-95" x2="75" y2="170" stroke="#cccccc" stroke-width="1.2"/>
+
+                    <text x="15" y="195" font-size="13" fill="#cc9933" font-family="serif"
+                          font-style="italic">Chitară</text>
+                </g>
+
+                <g transform="translate(580, 320)">
+                    <rect x="0" y="30" width="130" height="80" rx="10"
+                          fill="url(#gradToba)" stroke="#550011" stroke-width="2"/>
+
+                    <ellipse cx="65" cy="30" rx="65" ry="18"
+                             fill="#ff6688" stroke="#880022" stroke-width="2"/>
+
+                    <ellipse cx="65" cy="110" rx="65" ry="18"
+                             fill="#cc3355" stroke="#550011" stroke-width="2"/>
+
+                    <rect x="0" y="60" width="130" height="8"
+                          fill="#ffaacc" opacity="0.4"/>
+
+                    <line x1="50" y1="-20" x2="80" y2="20"
+                          stroke="#e0d0b0" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="50" cy="-22" r="6" fill="#e0d0b0"/>
+
+                    <text x="35" y="148" font-size="13" fill="#ff99aa" font-family="serif"
+                          font-style="italic">Tobă</text>
+                </g>
+
+                <g transform="translate(310, 310)">
+                    <text x="20" y="-8" font-size="12" fill="#00ffcc" font-family="sans-serif">
+                        Egalizator
+                    </text>
+
+                    <rect x="0" y="0" width="18" height="120" fill="url(#gradEQ)" rx="3">
+                        <animate attributeName="height"
+                            values="120;60;100;40;120"
+                            dur="1.8s" repeatCount="indefinite"/>
+                        <animate attributeName="y"
+                            values="0;60;20;80;0"
+                            dur="1.8s" repeatCount="indefinite"/>
+                    </rect>
+
+                    <rect x="24" y="0" width="18" height="80" fill="url(#gradEQ)" rx="3">
+                        <animate attributeName="height"
+                            values="80;120;50;90;80"
+                            dur="1.3s" repeatCount="indefinite"/>
+                        <animate attributeName="y"
+                            values="40;0;70;30;40"
+                            dur="1.3s" repeatCount="indefinite"/>
+                    </rect>
+
+                    <rect x="48" y="0" width="18" height="100" fill="url(#gradEQ)" rx="3">
+                        <animate attributeName="height"
+                            values="100;40;120;70;100"
+                            dur="2.1s" repeatCount="indefinite"/>
+                        <animate attributeName="y"
+                            values="20;80;0;50;20"
+                            dur="2.1s" repeatCount="indefinite"/>
+                    </rect>
+
+                    <rect x="72" y="0" width="18" height="60" fill="url(#gradEQ)" rx="3">
+                        <animate attributeName="height"
+                            values="60;110;30;100;60"
+                            dur="1.6s" repeatCount="indefinite"/>
+                        <animate attributeName="y"
+                            values="60;10;90;20;60"
+                            dur="1.6s" repeatCount="indefinite"/>
+                    </rect>
+
+                    <rect x="96" y="0" width="18" height="90" fill="url(#gradEQ)" rx="3">
+                        <animate attributeName="height"
+                            values="90;50;110;20;90"
+                            dur="1.4s" repeatCount="indefinite"/>
+                        <animate attributeName="y"
+                            values="30;70;10;100;30"
+                            dur="1.4s" repeatCount="indefinite"/>
+                    </rect>
+
+                    <rect x="120" y="0" width="18" height="70" fill="url(#gradEQ)" rx="3">
+                        <animate attributeName="height"
+                            values="70;120;40;95;70"
+                            dur="2.0s" repeatCount="indefinite"/>
+                        <animate attributeName="y"
+                            values="50;0;80;25;50"
+                            dur="2.0s" repeatCount="indefinite"/>
+                    </rect>
+                </g>
+
+                <polygon
+                    points="720,40 728,62 752,62 733,76 740,98 720,84 700,98 707,76 688,62 712,62"
+                    fill="#ffee55" stroke="#ffaa00" stroke-width="1.5" opacity="0.85">
+                    <animateTransform attributeName="transform"
+                        type="rotate" from="0 720 70" to="360 720 70"
+                        dur="8s" repeatCount="indefinite"/>
+                </polygon>
+
+                <polygon
+                    points="50,50 54,63 68,63 57,71 61,84 50,76 39,84 43,71 32,63 46,63"
+                    fill="#ff88cc" stroke="#cc3388" stroke-width="1" opacity="0.8">
+                    <animateTransform attributeName="transform"
+                        type="rotate" from="0 50 67" to="360 50 67"
+                        dur="6s" repeatCount="indefinite"/>
+                </polygon>
+
+                <text x="400" y="490" text-anchor="middle"
+                      font-size="32" font-family="Georgia, serif"
+                      fill="#cc99ff" letter-spacing="4">
+                    🎵 MUZICĂ
+                    <animate attributeName="opacity"
+                        values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+                </text>
+
+                <text x="400" y="520" text-anchor="middle"
+                      font-size="14" font-family="Georgia, serif"
+                      fill="#9988bb" letter-spacing="2">
+                    Simte ritmul · Trăiește melodia
+                </text>
+
+                <path
+                    d="M 0 420 Q 50 390 100 420 Q 150 450 200 420 Q 250 390 300 420
+                       Q 350 450 400 420 Q 450 390 500 420 Q 550 450 600 420
+                       Q 650 390 700 420 Q 750 450 800 420"
+                    fill="none" stroke="#6633cc" stroke-width="2" opacity="0.6">
+                    <animate attributeName="d"
+                        values="M 0 420 Q 50 390 100 420 Q 150 450 200 420 Q 250 390 300 420 Q 350 450 400 420 Q 450 390 500 420 Q 550 450 600 420 Q 650 390 700 420 Q 750 450 800 420;
+                                M 0 420 Q 50 450 100 420 Q 150 390 200 420 Q 250 450 300 420 Q 350 390 400 420 Q 450 450 500 420 Q 550 390 600 420 Q 650 450 700 420 Q 750 390 800 420;
+                                M 0 420 Q 50 390 100 420 Q 150 450 200 420 Q 250 390 300 420 Q 350 450 400 420 Q 450 390 500 420 Q 550 450 600 420 Q 650 390 700 420 Q 750 450 800 420"
+                        dur="2.5s" repeatCount="indefinite"/>
+                </path>
+
+                <path
+                    d="M 0 435 Q 50 405 100 435 Q 150 465 200 435 Q 250 405 300 435
+                       Q 350 465 400 435 Q 450 405 500 435 Q 550 465 600 435
+                       Q 650 405 700 435 Q 750 465 800 435"
+                    fill="none" stroke="#9955ee" stroke-width="1.5" opacity="0.4">
+                    <animate attributeName="d"
+                        values="M 0 435 Q 50 405 100 435 Q 150 465 200 435 Q 250 405 300 435 Q 350 465 400 435 Q 450 405 500 435 Q 550 465 600 435 Q 650 405 700 435 Q 750 465 800 435;
+                                M 0 435 Q 50 465 100 435 Q 150 405 200 435 Q 250 465 300 435 Q 350 405 400 435 Q 450 465 500 435 Q 550 405 600 435 Q 650 465 700 435 Q 750 405 800 435;
+                                M 0 435 Q 50 405 100 435 Q 150 465 200 435 Q 250 405 300 435 Q 350 465 400 435 Q 450 405 500 435 Q 550 465 600 435 Q 650 405 700 435 Q 750 465 800 435"
+                        dur="3s" repeatCount="indefinite"/>
+                </path>
+
+            </svg>
+
+        </section>
+
+        <section>
+            <h2>Elemente SVG utilizate</h2>
+            <p>Desenul de mai sus demonstrează utilizarea mai multor elemente și tehnici SVG:</p>
+            <ol>
+                <li>
+                    <strong>Figuri geometrice de bază:</strong> dreptunghi (<code>&lt;rect&gt;</code>),
+                    cerc (<code>&lt;circle&gt;</code>), elipsă (<code>&lt;ellipse&gt;</code>),
+                    linie (<code>&lt;line&gt;</code>), poligon (<code>&lt;polygon&gt;</code>),
+                    cale (<code>&lt;path&gt;</code>)
+                </li>
+                <li>
+                    <strong>Gradienți:</strong> liniari (<code>&lt;linearGradient&gt;</code>) și
+                    radiali (<code>&lt;radialGradient&gt;</code>) aplicați pe fundal, chitară, tobă,
+                    note și barele egalizatorului
+                </li>
+                <li>
+                    <strong>Text:</strong> elementul <code>&lt;text&gt;</code> pentru titlu, subtitlu,
+                    etichete și simbolul cheii Sol
+                </li>
+                <li>
+                    <strong>Animații:</strong> elementul <code>&lt;animate&gt;</code>
+                    pentru egalizatorul animat, undele sonore și pulsarea titlului;
+                    <code>&lt;animateTransform&gt;</code> pentru rotația stelelor
+                </li>
+                <li>
+                    <strong>Grupare:</strong> elementul <code>&lt;g&gt;</code> pentru organizarea
+                    elementelor în componente (chitara, toba, egalizatorul)
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&#169; 2025–2026 MuzicăWeb. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+
+</html>
