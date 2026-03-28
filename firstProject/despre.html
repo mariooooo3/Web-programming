@@ -3,117 +3,185 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Programare Web</title>
+    <title>MuzicăWeb – Despre</title>
 </head>
 
 <body>
-    <h1>Programare Web</h1>
-    <h2>Limbajul HTML</h2>
 
-    <p>
-        <strong>HTML (HyperText Markup Language)</strong> este un <em>limbaj de marcare</em>
-        utilizat pentru a crea pagini web.
-    </p>
+    <header>
+        <h1>🎵 MuzicăWeb</h1>
+        <p><em>Descoperă lumea muzicii — genuri, artiști, videoclipuri și mai mult!</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="inregistreaza.html">Înregistrează-te</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="desen.html">Desen</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>
-        Un exemplu de cod html il gasiti in imaginea urmatoare care se afla la adresa
-        <a href="https://upload.wikimedia.org/wikipedia/commons/3/35/HTML_file_type_mimetype_icon.png">
-            https://upload.wikimedia.org/wikipedia/commons/3/35/HTML_file_type_mimetype_icon.png
-        </a>
-        Imaginea are atributul <code>height</code> de valoare 147.
-    </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/HTML_file_type_mimetype_icon.png" height="147"
-        alt="HTML Logo">
+    <main>
 
-    <p>
-        <strong><em>Tag-urile</em></strong> html cele mai utilizate in realizarea tabelelor sunt:
-    </p>
+        <section>
+            <h2>Despre muzică</h2>
+            <p>
+                <strong>Muzica</strong> este o formă de <em>artă</em> și de expresie culturală care
+                folosește sunete organizate în timp. Ea este prezentă în toate culturile lumii și
+                joacă un rol esențial în viața oamenilor — de la ceremonii religioase la divertisment,
+                de la terapie la dans.
+            </p>
+            <p>
+                Muzica poate fi clasificată după mai multe criterii: gen, stil, epocă sau origine geografică.
+                Fie că preferi sunetele unui pian clasic sau beaturile unui track electronic, muzica
+                are ceva de oferit pentru fiecare.
+            </p>
+        </section>
 
-    <table border="1">
-        <tr>
-            <td>table</td>
-            <td>defineste un tabel</td>
-        </tr>
-        <tr>
-            <td>tr</td>
-            <td>un rand intr un tabel</td>
-        </tr>
-        <tr>
-            <td>td</td>
-            <td>o celula intr-un tabel</td>
-        </tr>
-    </table>
+        <section>
+            <h2>Elemente fundamentale ale muzicii</h2>
+            <p>
+                Orice compoziție muzicală este construită pe câteva elemente de bază:
+            </p>
+            <ul>
+                <li><strong>Melodia</strong> – succesiunea de note care formează „linia" principală</li>
+                <li><strong>Armonia</strong> – sunetele care însoțesc melodia (acorduri)</li>
+                <li><strong>Ritmul</strong> – structura temporală a muzicii</li>
+                <li><strong>Timbrul</strong> – culoarea sonoră specifică fiecărui instrument sau voce</li>
+                <li><strong>Dinamica</strong> – variațiile de intensitate (tare/încet)</li>
+            </ul>
+        </section>
 
-    <p>
-        <strong>Observatie:</strong> Pentru a pune un contur unui tabel se poate (dar nu se recomanda) sa se puna
-        atributul <code>border="1"</code>.
-        La validare va da eroarea:<em>The border attribute on the table element is obsolete</em>
-    </p>
+        <section>
+            <h2>Instrumente muzicale pe categorii</h2>
+            <p>
+                Instrumentele muzicale sunt clasificate în mai multe familii, în funcție de modul
+                în care produc sunetul:
+            </p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Categorie</th>
+                        <th>Exemple</th>
+                        <th>Mod de producere a sunetului</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cordofone</td>
+                        <td>Chitară, vioară, pian, harpă</td>
+                        <td>Vibrarea corzilor</td>
+                    </tr>
+                    <tr>
+                        <td>Aerofone</td>
+                        <td>Flaut, trompetă, saxofon, orgă</td>
+                        <td>Vibrarea coloanei de aer</td>
+                    </tr>
+                    <tr>
+                        <td>Membranofone</td>
+                        <td>Tobă, timpan, bongo</td>
+                        <td>Vibrarea unei membrane</td>
+                    </tr>
+                    <tr>
+                        <td>Idiofone</td>
+                        <td>Xilofon, maracas, triangle, clopot</td>
+                        <td>Vibrarea corpului instrumentului</td>
+                    </tr>
+                    <tr>
+                        <td>Electrofone</td>
+                        <td>Chitară electrică, sintetizator, theremin</td>
+                        <td>Semnale electrice amplificate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <p>
-        Formularele se pot crea cu ajutorul tag-ului <code>form</code> care poate contine tag-urile:
-        <code>input, textarea, label, select, option, button</code>.
-        Pentru mai multe detalii consultati cursul sau tutorialul <a
-            href="http://www.w3schools.com/html/html_forms.asp">
-            HTML Forms and Inputs</a> de la adresa <a
-            href="http://www.w3schools.com/html/html_forms.asp">http://www.w3schools.com/html/html_forms.asp</a>
-    </p>
+        <section>
+            <h2>Genuri muzicale principale</h2>
 
-    <p>
-        Un exemplu de formular este urmatorul:
-    </p>
-    <form action="#" method="post">
-        <label for="nume">Nume: </label>
-        <input type="text" id="nume" name="nume" placeholder="nume">
-        <br>
+            <article>
+                <h3>Muzica clasică</h3>
+                <p>
+                    Muzica <strong>clasică</strong> cuprinde lucrările compozitorilor europeni din
+                    perioadele Baroc, Clasicism și Romantism. Dintre cei mai celebri compozitori amintim:
+                </p>
+                <ol>
+                    <li>Johann Sebastian <strong>Bach</strong> (1685–1750) – maistrul muzicii baroce</li>
+                    <li>Wolfgang Amadeus <strong>Mozart</strong> (1756–1791) – geniu al clasicismului</li>
+                    <li>Ludwig van <strong>Beethoven</strong> (1770–1827) – tranziția spre romantism</li>
+                    <li>Frédéric <strong>Chopin</strong> (1810–1849) – poetul pianului</li>
+                </ol>
+            </article>
 
-        <label for="prenume">Prenume:</label>
-        <input type="text" id="prenume" name="prenume" placeholder="prenume">
-        <br>
+            <article>
+                <h3>Rock</h3>
+                <p>
+                    <strong>Rock-ul</strong> este un gen muzical apărut în anii 1950 în Statele Unite,
+                    caracterizat prin chitare electrice, bas și tobe. Trupe legendare includ:
+                    <em>The Beatles</em>, <em>Led Zeppelin</em>, <em>Queen</em> și <em>Pink Floyd</em>.
+                </p>
+            </article>
 
-        <label for="parola">Parola:</label>
-        <input type="password" id="parola" name="parola">
-        <br>
+            <article>
+                <h3>Jazz</h3>
+                <p>
+                    <strong>Jazz-ul</strong> a apărut la începutul secolului XX în New Orleans și se
+                    distinge prin improvizație, sincope și structuri armonice complexe. Artiști reprezentativi:
+                    <em>Louis Armstrong</em>, <em>Miles Davis</em> și <em>Ella Fitzgerald</em>.
+                </p>
+            </article>
 
-        <label for="culoare">Culoarea preferata:</label>
-        <select id="culoare" name="culoare">
-            <option value="rosu">rosu</option>
-            <option value="verde">verde</option>
-            <option value="albastru">albastru</option>
-        </select>
-        <br>
+            <article>
+                <h3>Pop și Electronic</h3>
+                <p>
+                    Muzica <strong>pop</strong> modernă și cea <strong>electronică</strong> domină
+                    industria muzicală contemporană. Artiști precum <em>Michael Jackson</em>,
+                    <em>Madonna</em>, <em>Daft Punk</em> și <em>David Guetta</em> au definit aceste genuri.
+                </p>
+            </article>
 
-        <label for="descriere">Descriere:</label>
-        <textarea id="descriere" name="descriere" rows="4" cols="30"></textarea>
-        <br>
+        </section>
 
-        <input type="checkbox" id="acord" name="acord">
-        <label for="acord">Sunt de acord cu conditiile</label>
-        <br>
+        <section>
+            <h2>Resurse utile despre muzică</h2>
+            <p>Dacă dorești să înveți mai multe despre muzică, consultă următoarele resurse:</p>
+            <ul>
+                <li>
+                    <a href="https://www.musictheory.net/">Music Theory</a> –
+                    noțiuni de teorie muzicală pentru începători
+                </li>
+                <li>
+                    <a href="https://www.allmusic.com/">AllMusic</a> –
+                    enciclopedie muzicală cu mii de artiști și albume
+                </li>
+                <li>
+                    <a href="https://www.last.fm/">Last.fm</a> –
+                    descoperă muzică nouă în funcție de preferințe
+                </li>
+            </ul>
+        </section>
 
-        <button type="submit">Inregistreaza</button>
-    </form>
-    <p>Pentru a crea liste se pot folosi tag-urile:</p>
+        <section>
+            <h2>Imagine reprezentativă</h2>
+            <p>
+                Mai jos este o imagine sugestivă pentru lumea muzicii, preluată de pe Wikipedia,
+                reprezentând note muzicale — simbolul universal al artei sonore.
+                Imaginea are atributul <code>height</code> de valoare <code>150</code>.
+            </p>
+            <img
+                src="imagini/muzica.svg"
+                height="150"
+                alt="Note muzicale">
+        </section>
 
-    <ol>
-        <li>ul - lista neordonata</li>
-        <li>ol - lista ordonata</li>
-        <li>li - item din lista</li>
-        <li>dl - lista cu descrieri</li>
-        <li>dt - termen dintr-o lista cu descriere</li>
-        <li>dd - descriere dintr-o lista cu descrieri</li>
-    </ol>
+    </main>
 
-    <p>
-        Pentru a insera un document HTML in altul se poate folosi tag-ul <code>&lt;iframe&gt;</code>.
-        Astfel, exemplul de mai jos insereaza continutul de la adresa <a
-            href="https://html.spec.whatwg.org/multipage/">
-            https://html.spec.whatwg.org/multipage/
-        </a>
-        .
-    </p>
-    <iframe src="https://html.spec.whatwg.org/multipage/" width="800" height="200"></iframe>
-    <p>&#169; 2025. Programare web</p>
+    <footer>
+        <hr>
+        <p>&#169; 2025–2026 MuzicăWeb. Toate drepturile rezervate.</p>
+    </footer>
+
 </body>
 
 </html>
