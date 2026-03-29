@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5c3b2e"/>
+      <stop offset="100%" stop-color="#c68c53"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <circle cx="90" cy="80" r="55" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="560" cy="90" r="70" fill="rgba(255,255,255,0.10)"/>
+  <circle cx="510" cy="280" r="90" fill="rgba(255,255,255,0.08)"/>
+  <text x="50%" y="45%" text-anchor="middle" font-size="110" fill="white" opacity="0.9">🎙</text>
+  <text x="50%" y="68%" text-anchor="middle" font-size="34" fill="white" font-family="Georgia">Hello</text>
+  <text x="50%" y="80%" text-anchor="middle" font-size="20" fill="white" font-family="Arial">Adele</text>
+</svg>
