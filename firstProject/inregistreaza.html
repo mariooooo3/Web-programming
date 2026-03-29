@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MuzicăWeb – Înregistrează-te</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎵 MuzicăWeb</h1>
+        <p><em>Descoperă lumea muzicii — genuri, artiști, videoclipuri și mai mult!</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="inregistreaza.html">Înregistrează-te</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="desen.html">Desen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Înregistrare – Crează-ți profilul muzical</h2>
+            <p>
+                Completează formularul de mai jos pentru a-ți crea un cont pe <strong>MuzicăWeb</strong>.
+                Toate câmpurile marcate cu <strong>*</strong> sunt obligatorii.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Informații generale</legend>
+
+                    <p>
+                        <label for="username">Nume utilizator *:</label><br>
+                        <input type="text" id="username" name="username"
+                            placeholder="ex: fan_muzica_2025" required>
+                    </p>
+
+                    <p>
+                        <label for="parola">Parolă *:</label><br>
+                        <input type="password" id="parola" name="parola"
+                            placeholder="minim 8 caractere" required>
+                    </p>
+
+                    <p>
+                        <label for="nume">Nume *:</label><br>
+                        <input type="text" id="nume" name="nume"
+                            placeholder="ex: Popescu" required>
+                    </p>
+
+                    <p>
+                        <label for="prenume">Prenume *:</label><br>
+                        <input type="text" id="prenume" name="prenume"
+                            placeholder="ex: Andrei" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Adresă de e-mail *:</label><br>
+                        <input type="email" id="email" name="email"
+                            placeholder="ex: andrei@email.com" required>
+                    </p>
+
+                    <p>
+                        <label for="telefon">Număr de telefon:</label><br>
+                        <input type="tel" id="telefon" name="telefon"
+                            placeholder="ex: 0712345678">
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Informații personale</legend>
+
+                    <p>
+                        <label for="sex">Sex:</label><br>
+                        <select id="sex" name="sex">
+                            <option value="">-- Selectează --</option>
+                            <option value="masculin">Masculin</option>
+                            <option value="feminin">Feminin</option>
+                            <option value="altul">Prefer să nu specific</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mancare">Mâncarea preferată:</label><br>
+                        <input type="text" id="mancare" name="mancare"
+                            list="lista-mancare" placeholder="Începe să scrii...">
+                        <datalist id="lista-mancare">
+                            <option value="Pizza">
+                            <option value="Paste">
+                            <option value="Sushi">
+                            <option value="Burger">
+                            <option value="Salată">
+                            <option value="Tocană">
+                            <option value="Mici">
+                            <option value="Shaorma">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="culoare">Culoarea preferată:</label><br>
+                        <input type="color" id="culoare" name="culoare" value="#6600cc">
+                    </p>
+
+                    <p>
+                        <label for="data_nasterii">Data nașterii:</label><br>
+                        <input type="date" id="data_nasterii" name="data_nasterii">
+                    </p>
+
+                    <p>
+                        <label for="ora_nasterii">Ora nașterii:</label><br>
+                        <input type="time" id="ora_nasterii" name="ora_nasterii">
+                    </p>
+
+                    <p>
+                        <label for="varsta">Vârstă (ani): <output id="afisaj_varsta">18</output></label><br>
+                        <input type="range" id="varsta" name="varsta"
+                            min="1" max="100" value="18"
+                            oninput="document.getElementById('afisaj_varsta').value = this.value">
+                    </p>
+
+                    <p>
+                        <label for="pagina_web">Adresa paginii personale:</label><br>
+                        <input type="url" id="pagina_web" name="pagina_web"
+                            placeholder="https://site-ul-tau.ro">
+                    </p>
+
+                    <p>
+                        <label for="descriere">Descriere (spune-ne ceva despre tine și preferințele muzicale):</label><br>
+                        <textarea id="descriere" name="descriere" rows="5" cols="50"
+                            placeholder="ex: Îmi place muzica rock și cânt la chitară de 5 ani..."></textarea>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Preferințe muzicale</legend>
+
+                    <p>
+                        <label>Genul muzical preferat:</label><br>
+                        <input type="radio" id="gen_pop" name="gen_muzical" value="pop">
+                        <label for="gen_pop">Pop</label><br>
+                        <input type="radio" id="gen_rock" name="gen_muzical" value="rock">
+                        <label for="gen_rock">Rock</label><br>
+                        <input type="radio" id="gen_jazz" name="gen_muzical" value="jazz">
+                        <label for="gen_jazz">Jazz</label><br>
+                        <input type="radio" id="gen_clasic" name="gen_muzical" value="clasic">
+                        <label for="gen_clasic">Clasică</label><br>
+                        <input type="radio" id="gen_electronic" name="gen_muzical" value="electronic">
+                        <label for="gen_electronic">Electronic</label><br>
+                        <input type="radio" id="gen_hiphop" name="gen_muzical" value="hiphop">
+                        <label for="gen_hiphop">Hip-Hop</label>
+                    </p>
+
+                    <p>
+                        <label>Dispozitivul pe care asculți muzică cel mai des:</label><br>
+                        <input type="checkbox" id="telefon_cb" name="dispozitiv" value="telefon">
+                        <label for="telefon_cb">Telefon</label><br>
+                        <input type="checkbox" id="laptop_cb" name="dispozitiv" value="laptop">
+                        <label for="laptop_cb">Laptop / Calculator</label><br>
+                        <input type="checkbox" id="boxe_cb" name="dispozitiv" value="boxe">
+                        <label for="boxe_cb">Boxe / Sistem audio</label><br>
+                        <input type="checkbox" id="casti_cb" name="dispozitiv" value="casti">
+                        <label for="casti_cb">Căști</label>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit" disabled>Înregistrează</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&#169; 2025–2026 MuzicăWeb. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+
+</html>
